@@ -38,23 +38,23 @@ namespace CursoEFCore.Migrations
 
                     b.Property<string>("Descripcion")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
 
                     b.Property<DateTime>("Fecha")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("date");
 
                     b.Property<string>("TituloArticulo")
                         .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)")
-                        .HasColumnName("Articulo");
+                        .HasColumnName("Titulo");
 
                     b.HasKey("Articulo_Id");
 
                     b.HasIndex("Categoria_Id");
 
-                    b.ToTable("Tbl_Articulo");
+                    b.ToTable("Tbl_Articulo", (string)null);
                 });
 
             modelBuilder.Entity("CursoEFCore.Models.ArticuloEtiqueta", b =>
@@ -84,7 +84,7 @@ namespace CursoEFCore.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime>("FechaCreacion")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("date");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -127,7 +127,7 @@ namespace CursoEFCore.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Etiqueta_Id"), 1L, 1);
 
                     b.Property<DateTime>("Fecha")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("date");
 
                     b.Property<string>("Titulo")
                         .HasColumnType("nvarchar(max)");
