@@ -62,5 +62,32 @@ namespace CursoEFCore.Controllers
             _contexto.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
+        public IActionResult Detalle(int? id)
+        {
+            if(id is null)
+                 return View();      
+
+            var usuario = _contexto.Usuario.Include(d => d.DetalleUsuario).FirstOrDefault(c => c.Id == id);
+            if(usuario is null)
+                return NotFound();             
+
+            return View(usuario);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult AgregarDetalle(Usuario usuario)
+        {
+            if (usuario.DetalleUsuario.DetalleUsuario_Id == 0)
+            {
+                _contexto.DetalleUsuario.Add(usuario.DetalleUsuario);
+                _contexto.SaveChanges();
+
+                var usuarioBd = _contexto.Usuario.FirstOrDefault(u => u.Id == usuario.Id);
+                usuarioBd.DetalleUsuario_Id = usuario.DetalleUsuario.DetalleUsuario_Id;
+                _contexto.SaveChanges();
+            }
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\pedro\Documents\EFCore\CursoEFCore\CursoEFCore
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/pedro/Documents/EFCore/CursoEFCore/CursoEFCore/Views/Articulos/AdministrarEtiquetas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWN1bG9zXEFkbWluaXN0cmFyRXRpcXVldGFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/pedro/Documents/EFCore/CursoEFCore/CursoEFCore/Views/Articulos/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWN1bG9zXENyZWFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +48,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhc1xWaXN0YUNyZWFyTXVsdGlwbGVPcGNpb25Gb3JtdWxhcmlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/pedro/Documents/EFCore/CursoEFCore/CursoEFCore/Views/Etiquetas/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRpcXVldGFzXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pedro/Documents/EFCore/CursoEFCore/CursoEFCore/Views/Etiquetas/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRpcXVldGFzXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pedro/Documents/EFCore/CursoEFCore/CursoEFCore/Views/Etiquetas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXRpcXVldGFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/pedro/Documents/EFCore/CursoEFCore/CursoEFCore/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,6 +78,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/pedro/Documents/EFCore/CursoEFCore/CursoEFCore/Views/Usuarios/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pedro/Documents/EFCore/CursoEFCore/CursoEFCore/Views/Usuarios/Detalle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWxsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/pedro/Documents/EFCore/CursoEFCore/CursoEFCore/Views/Usuarios/Editar.cshtml]
